@@ -37,8 +37,7 @@ module.exports = async (req, res) => {
   }
   const craftUrl = blockItem.url
   // console.log('htmlrewrite craftUrl: ', craftUrl)
-  const bodyStr = ""
-  const bodyStr_ = `
+  const bodyStr = `
   <div class="navigation">
     <input type="checkbox" class="navigation__checkbox" id="nav-toggle" />
     <label for="nav-toggle" class="navigation__button">
