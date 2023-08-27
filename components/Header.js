@@ -134,18 +134,18 @@ const Header = ({ navBarTitle, siteConfigObj }) => {
         id='sticky-nav'
         ref={navRef}
       >
-        // <div className='flex items-center'>
-        //   <Link passHref href='/'>
-        //     <a aria-label={siteConfigObj['Site Title']}>
-        //       <div className='h-6 hover:text-blue-500 dark:hover:text-blue-500 fill-current'>
-        //         <img alt='logo' className='w-6 h-6' src={siteConfigObj['Site Logo']} />
-        //       </div>
-        //     </a>
-        //   </Link>
-        //   <p className={`ml-2 font-medium ${!showTitle ? 'hidden' : 'hidden xl:block'}`}>
-        //     {navBarTitle}
-        //   </p>
-        // </div>
+        <div className='flex items-center'>
+          <Link passHref href='/'>
+            <a aria-label={siteConfigObj['Site Title']}>
+              <div className='h-6 hover:text-blue-500 dark:hover:text-blue-500 fill-current'>
+                <img alt='logo' className='w-6 h-6' src={siteConfigObj['Site Logo']} />
+              </div>
+            </a>
+          </Link>
+          <p className={`ml-2 font-medium ${!showTitle ? 'hidden' : 'hidden xl:block'}`}>
+            {navBarTitle}
+          </p>
+        </div>
         <NavBar siteConfigObj={siteConfigObj} />
       </div>
     </>
