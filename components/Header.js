@@ -127,28 +127,28 @@ const Header = ({ navBarTitle, siteConfigObj }) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sentinalRef])
   return (
-    // <>
-    //   <div className='observer-element h-4 md:h-12' ref={sentinalRef}></div>
-    //   <div
-    //     className='sticky-nav m-auto w-full h-6 flex flex-row justify-between items-center mb-2 md:mb-12 py-8 bg-opacity-60 max-w-2xl px-4'
-    //     id='sticky-nav'
-    //     ref={navRef}
-    //   >
-    //     <div className='flex items-center'>
-    //       <Link passHref href='/'>
-    //         <a aria-label={siteConfigObj['Site Title']}>
-    //           <div className='h-6 hover:text-blue-500 dark:hover:text-blue-500 fill-current'>
-    //             <img alt='logo' className='w-6 h-6' src={siteConfigObj['Site Logo']} />
-    //           </div>
-    //         </a>
-    //       </Link>
-    //       <p className={`ml-2 font-medium ${!showTitle ? 'hidden' : 'hidden xl:block'}`}>
-    //         {navBarTitle}
-    //       </p>
-    //     </div>
-    //     <NavBar siteConfigObj={siteConfigObj} />
-    //   </div>
-    // </>
+    <>
+      <div className='observer-element h-4 md:h-12' ref={sentinalRef}></div>
+      <div
+        className='sticky-nav m-auto w-full h-6 flex flex-row justify-between items-center mb-2 md:mb-12 py-8 bg-opacity-60 max-w-2xl px-4'
+        id='sticky-nav'
+        ref={navRef}
+      >
+        // <div className='flex items-center'>
+        //   <Link passHref href='/'>
+        //     <a aria-label={siteConfigObj['Site Title']}>
+        //       <div className='h-6 hover:text-blue-500 dark:hover:text-blue-500 fill-current'>
+        //         <img alt='logo' className='w-6 h-6' src={siteConfigObj['Site Logo']} />
+        //       </div>
+        //     </a>
+        //   </Link>
+        //   <p className={`ml-2 font-medium ${!showTitle ? 'hidden' : 'hidden xl:block'}`}>
+        //     {navBarTitle}
+        //   </p>
+        // </div>
+        <NavBar siteConfigObj={siteConfigObj} />
+      </div>
+    </>
   )
 }
 
