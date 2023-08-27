@@ -105,7 +105,6 @@ module.exports = async (req, res) => {
       ''
     )
     .replace('</head><body', headStr + '</head><body')
-    .replace('</body></html></body></html>')
     // .replace('</body></html>', bodyStr + '</body></html>')
 
   res.setHeader('Content-Type', 'text/html; charset=utf-8')
